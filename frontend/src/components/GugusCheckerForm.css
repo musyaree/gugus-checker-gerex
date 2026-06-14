@@ -1,0 +1,116 @@
+.gugus-checker-form {
+  width: 100%;
+  max-width: var(--container-narrow);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+  position: relative;
+  z-index: 5;
+  text-align: left;
+}
+
+.dk-search {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--space-4);
+}
+
+.dk-search-btn {
+  flex-shrink: 0;
+}
+
+.message-box {
+  padding: var(--space-4) var(--space-6);
+  border-radius: var(--radius-md);
+  animation: slideDown var(--dur-base) var(--ease-out);
+}
+
+.error-box {
+  background: rgba(199, 66, 126, 0.15);
+  border: var(--border-thin) solid rgba(199, 66, 126, 0.3);
+}
+
+.loading-box {
+  background: rgba(90, 191, 160, 0.15);
+  border: var(--border-thin) solid rgba(90, 191, 160, 0.3);
+}
+
+.message-text {
+  margin: 0;
+  font-size: var(--fs-sm);
+  color: var(--text-body);
+  line-height: var(--lh-normal);
+}
+
+.result-section {
+  display: flex;
+  justify-content: center;
+  animation: dk-rise var(--dur-reveal) var(--ease-out) both;
+}
+
+.empty-state {
+  text-align: center;
+  padding: var(--space-12) var(--space-6);
+}
+
+.empty-text {
+  margin: 0;
+  font-size: var(--fs-base);
+  color: var(--text-muted);
+  line-height: var(--lh-relaxed);
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes dk-rise {
+  from {
+    opacity: 0;
+    transform: translateY(22px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .result-section,
+  .message-box {
+    animation: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .gugus-checker-form {
+    margin: calc(var(--space-8) * -1) auto 0;
+  }
+
+  .dk-search {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .dk-search-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .gugus-checker-form {
+    gap: var(--space-6);
+  }
+
+  .empty-text {
+    font-size: var(--fs-sm);
+  }
+}

@@ -1,0 +1,73 @@
+/* ===========================================================================
+   DIMENSI KARSA — EFFECTS TOKENS (v2 — dungeon portal aesthetic)
+   ===========================================================================*/
+
+:root {
+  /* Corner radii */
+  --radius-xs:   6px;
+  --radius-sm:   10px;
+  --radius-md:   14px;
+  --radius-lg:   20px;
+  --radius-xl:   28px;
+  --radius-pill: 999px;
+
+  /* Border widths */
+  --border-thin:  1px;
+  --border-mid:   2px;
+  --border-thick: 3px;
+
+  /* Glassmorphism — crystal panel embedded in dungeon stone */
+  --glass-blur:     14px;
+  --glass-saturate: 1.3; /* @kind other */
+  --glass-fill:     var(--surface-card-glass);
+  --glass-border:   var(--border-crystal);
+
+  /* Glows */
+  --glow-portal: 0 0 28px rgba(90, 191, 160, 0.6), 0 0 72px rgba(90, 191, 160, 0.25);
+  --glow-portal-soft: 0 0 20px rgba(90, 191, 160, 0.4);
+  --glow-magenta: 0 0 28px rgba(199, 66, 126, 0.6), 0 0 56px rgba(199, 66, 126, 0.3);
+  --glow-gold: 0 0 16px rgba(213, 167, 84, 0.4);
+
+  /* Dungeon portal background — radial teal glow + conic rays + side vignette */
+  --bg-radial-glow:
+    repeating-conic-gradient(
+      from -18deg at 50% 0%,
+      rgba(90, 191, 160, 0.065) 0deg 3.5deg,
+      transparent 3.5deg 12deg
+    ),
+    radial-gradient(
+      ellipse 58% 72% at 50% -8%,
+      #C2EEE6 0%,
+      #5ABFA0 13%,
+      #286648 30%,
+      #1A3828 50%,
+      transparent 68%
+    ),
+    linear-gradient(
+      to right,
+      rgba(8,14,10,0.92) 0%,
+      rgba(8,14,10,0.38) 18%,
+      transparent 32%,
+      transparent 68%,
+      rgba(8,14,10,0.38) 82%,
+      rgba(8,14,10,0.92) 100%
+    );
+
+  /* Shadows */
+  --shadow-sm:   0 2px 8px rgba(0, 0, 0, 0.4);
+  --shadow-md:   0 8px 28px rgba(0, 0, 0, 0.5);
+  --shadow-lg:   0 24px 64px rgba(0, 0, 0, 0.55);
+  --shadow-card: 0 20px 56px rgba(0, 0, 0, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+
+  /* Motion */
+  --ease-out:    cubic-bezier(0.22, 1, 0.36, 1);  /* @kind other */
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);  /* @kind other */
+  --dur-fast:    140ms; /* @kind other */
+  --dur-base:    240ms; /* @kind other */
+  --dur-slow:    420ms; /* @kind other */
+  --dur-reveal:  680ms; /* @kind other */
+
+  /* Legacy aliases (kept for back-compat) */
+  --glow-accent:      var(--glow-portal);
+  --glow-accent-soft: var(--glow-portal-soft);
+}

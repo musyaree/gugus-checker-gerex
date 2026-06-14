@@ -1,0 +1,12 @@
+/* ===========================================================================
+   DIMENSI KARSA DESIGN SYSTEM — GLOBAL ENTRY
+   GERIGI ITS 2026 · "Gugus Checker"
+   Consumers link THIS file. It is an @import manifest only — no rules here.
+   ===========================================================================*/
+
+@import "./fonts.css";
+@import "./colors.css";
+@import "./typography.css";
+@import "./spacing.css";
+@import "./effects.css";
+@import "./base.css";
