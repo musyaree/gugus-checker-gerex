@@ -2,6 +2,14 @@
 
 A fullstack application to check gugus and region assignments for new students based on NRP.
 
+## Screenshots
+
+### Form Input
+<img src="docs/form.png" width="850" alt="Form Input Page" />
+
+### Result Card
+<img src="docs/card.png" width="850" alt="Result Card Display" />
+
 ## Implementation Approach
 
 ### Frontend Approach
