@@ -1,7 +1,7 @@
 {
-  "name": "ospek-maba-backend",
+  "name": "gugus-checker-backend",
   "version": "1.0.0",
-  "description": "Backend untuk Sistem Informasi Maba Ospek",
+  "description": "Backend untuk Gugus Checker GERIGI",
   "main": "src/server.js",
   "type": "module",
   "scripts": {
