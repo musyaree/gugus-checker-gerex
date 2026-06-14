@@ -1,0 +1,79 @@
+/* ===========================================================================
+   DIMENSI KARSA — COLOR TOKENS (v2 — matched to official Instagram art)
+   Colors derived from the official GERIGI ITS 2026 Instagram post.
+   ===========================================================================*/
+
+:root {
+  /* --- Raw brand palette (from Instagram post analysis) ----------------- */
+  --dk-stone-dark:    #1C3025; /* dungeon stone — main background             */
+  --dk-stone-mid:     #2E4E3A; /* lighter stone — raised panels, card bg      */
+  --dk-stone-deep:    #152018; /* darkest stone — side wall vignette          */
+
+  --dk-portal-teal:   #5ABFA0; /* teal portal beam color                      */
+  --dk-portal-bright: #B8EAE0; /* bright top of portal / light source         */
+  --dk-portal-light:  #9EEBD5; /* portal mid glow                             */
+
+  --dk-magenta:       #C7427E; /* hot pink badge fill                          */
+  --dk-magenta-border:#8E1F55; /* dark border around pink badges              */
+  --dk-magenta-hover: #D9599A; /* lighter on hover                            */
+  --dk-magenta-press: #A83068; /* darker on press                             */
+
+  --dk-purple:        #7060C8; /* cartoon title fill (DIMENSI KARSA style)    */
+  --dk-purple-deep:   #4A3A90; /* title shadow depth                          */
+  --dk-purple-dark:   #2E2460; /* darkest purple shade                        */
+
+  --dk-gold:          #D5A754; /* old gold — borders, hairlines, labels        */
+  --dk-gold-300:      #E7C681; /* gold highlight                              */
+  --dk-gold-700:      #A77F33; /* gold pressed / shadow                       */
+
+  --dk-cream:         #FAF2E0; /* parchment scroll fill                        */
+  --dk-cream-edge:    #D4A838; /* scroll golden border / end caps             */
+  --dk-cream-shadow:  #C09020; /* scroll edge shadow                          */
+
+  --dk-lime:          #6DC44A; /* bright foliage green                        */
+  --dk-lime-dark:     #3A7A24; /* deeper foliage                              */
+
+  --dk-white:         #F0F8F5; /* warm white — body text on dark              */
+  --dk-white-dim:     rgba(200, 235, 225, 0.68); /* muted teal-tinted text    */
+  --dk-white-faint:   rgba(180, 220, 210, 0.12); /* faint hairlines           */
+
+  /* =========================================================================
+     SEMANTIC ALIASES
+     ========================================================================= */
+
+  /* Surfaces */
+  --surface-bg:           var(--dk-stone-dark);
+  --surface-panel:        var(--dk-stone-mid);
+  --surface-card:         #1D4035;
+  --surface-card-glass:   rgba(20, 52, 42, 0.62);
+  --surface-overlay:      rgba(12, 22, 16, 0.75);
+
+  /* Text */
+  --text-title:    var(--dk-purple);         /* cartoon title display        */
+  --text-heading:  var(--dk-portal-light);   /* section headings on dark     */
+  --text-body:     var(--dk-white);
+  --text-label:    var(--dk-portal-bright);  /* field labels, captions       */
+  --text-muted:    var(--dk-white-dim);
+  --text-on-cta:   #FFFFFF;
+  --text-on-gold:  var(--dk-purple-dark);
+
+  /* Accent & glow */
+  --accent:        var(--dk-portal-teal);
+  --accent-soft:   var(--dk-portal-bright);
+
+  /* Borders & lines */
+  --border-gold:     var(--dk-gold);
+  --border-hairline: var(--dk-white-faint);
+  --border-crystal:  rgba(90, 191, 160, 0.40); /* teal glass edge             */
+
+  /* CTA / badge */
+  --cta-bg:        var(--dk-magenta);
+  --cta-bg-hover:  var(--dk-magenta-hover);
+  --cta-bg-press:  var(--dk-magenta-press);
+  --cta-text:      #FFFFFF;
+  --badge-bg:      var(--dk-magenta);
+  --badge-text:    #FFFFFF;
+
+  /* Focus ring */
+  --focus-ring:    var(--dk-portal-teal);
+}

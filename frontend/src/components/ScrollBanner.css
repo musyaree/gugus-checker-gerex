@@ -1,0 +1,23 @@
+.scroll-banner-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+}
+
+@media (max-width: 480px) {
+  .scroll-end {
+    width: 24px !important;
+    height: 60px !important;
+  }
+
+  .scroll-body {
+    padding: 16px 32px !important;
+    min-width: 180px !important;
+  }
+
+  .scroll-title {
+    font-size: clamp(2rem, 8vw, 3.5rem) !important;
+  }
+}

@@ -1,0 +1,90 @@
+/* ===========================================================================
+   DIMENSI KARSA — BASE LAYER
+   Light reset + element defaults + a few brand utility classes.
+   ===========================================================================*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--fs-base);
+  line-height: var(--lh-normal);
+  color: var(--text-body);
+  background-color: var(--surface-bg);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-family: var(--font-display);
+  line-height: var(--lh-snug);
+  font-weight: var(--fw-bold);
+}
+
+p { margin: 0; }
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+a {
+  color: var(--text-label);
+  text-decoration: none;
+}
+
+::selection {
+  background: rgba(161, 248, 154, 0.28);
+  color: var(--dk-white);
+}
+
+/* --- Brand utility helpers ------------------------------------------------ */
+
+/* The glowing abyss backdrop — drop on any full-bleed stage */
+.dk-stage {
+  position: relative;
+  background-color: var(--surface-bg);
+  background-image: var(--bg-radial-glow);
+  isolation: isolate;
+}
+
+/* Caps label with gold treatment */
+.dk-label {
+  font-family: var(--font-body);
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-xs);
+  letter-spacing: var(--ls-wide);
+  text-transform: uppercase;
+  color: var(--text-label);
+}
+
+/* Display heading with subtle gold glow */
+.dk-display {
+  font-family: var(--font-display);
+  font-weight: var(--fw-black);
+  letter-spacing: var(--ls-widest);
+  color: var(--text-heading);
+  text-shadow: var(--glow-gold);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
